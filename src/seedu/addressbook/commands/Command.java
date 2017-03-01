@@ -12,6 +12,15 @@ import static seedu.addressbook.ui.Gui.DISPLAYED_INDEX_OFFSET;
  * Represents an executable command.
  */
 public abstract class Command {
+    //Number of different types of command the user can use
+    public static final int COMMAND_TYPES_ALL = 9;
+    
+    //Dummy command word
+    public static final String COMMAND_WORD = "dummy command";
+    
+    //Dummy command usage string
+    public static final String COMMAND_USAGE = "dummy command usage";
+    
     protected AddressBook addressBook;
     protected List<? extends ReadOnlyPerson> relevantPersons;
     private int targetIndex = -1;
